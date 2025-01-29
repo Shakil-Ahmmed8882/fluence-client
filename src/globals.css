@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#FDB441] to-[#D14A2D] bg-clip-text text-transparent
+}
+.gradient-bg {
+  @apply bg-gradient-to-r from-[#FDB441] to-[#D14A2D]
+}
+
+.secondary-color {
+  background-color: var(--secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #272727;
+    --foreground: #ededed;
+    --gradient: linear-gradient(to right, #FDB441, #D14A2D);
+    --secondary: #17aeea;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body  {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
